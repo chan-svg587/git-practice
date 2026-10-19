@@ -22,12 +22,27 @@ git status --short
 
 1. GitHub에서 이름이 `git-practice`인 Public 저장소를 만듭니다.
 2. 로컬 이력을 그대로 올릴 수 있도록 GitHub에서 README 등을 미리 생성하지 않습니다.
-3. 아래 주소의 `YOUR_USERNAME`을 실제 GitHub 계정으로 바꿔 실행합니다.
+3. 이 저장소의 원격 주소를 연결하고 Push합니다.
 
 ```sh
-git remote add origin https://github.com/YOUR_USERNAME/git-practice.git
+git remote add origin https://github.com/chan-svg587/git-practice.git
 git push -u origin main
 ```
 
 4. GitHub 페이지에서 공개 상태, 다섯 파일, 다섯 커밋을 확인합니다.
 5. 최종 제출에는 실제 GitHub 저장소의 전체 URL을 사용합니다.
+
+## 원격 초기 커밋과 병합
+
+GitHub에서 생성한 README와 Python용 .gitignore가 포함된 초기 커밋이 있어
+첫 Push가 거절되었습니다. 원격 이력을 가져온 뒤 두 이력을 병합했습니다.
+
+```sh
+git fetch origin
+git merge origin/main --allow-unrelated-histories --no-edit
+```
+
+README는 같은 과제 소개를 더 자세히 담은 로컬 문서로 정리하고,
+.gitignore는 원격 Python 규칙과 로컬 제외 규칙을 함께 유지했습니다.
+충돌을 해결한 파일을 git add로 스테이징한 뒤 병합 커밋을 기록했습니다.
+원격 초기 커밋과 로컬의 다섯 작업 커밋은 모두 보존했습니다.
