@@ -1,21 +1,9 @@
-# 제출 전 점검표
+# 과제 제출 조건
 
-로컬에서 확인할 항목과 GitHub 업로드 후 확인할 항목을 구분합니다.
-원격 관련 항목은 실제 업로드를 확인한 뒤 체크합니다.
+- 저장소 이름: git-practice
+- README.md와 .gitignore를 포함해 파일 5개 이상
+- 커밋 5개 이상
+- Public 저장소
+- 로컬에서 Git 명령어로 작업한 뒤 Push
 
-## 로컬 확인
-
-- [x] 기존 프로젝트와 분리된 `git-practice` 폴더에서 작업
-- [x] 실제 Git 명령어로 저장소 초기화 및 커밋
-- [x] `README.md`와 `.gitignore` 포함
-- [x] Git 추적 파일 5개 포함
-- [x] 의미 있는 작업 단위의 커밋 최소 5개 기록
-- [x] 문서에 비밀번호, 토큰, 개인 연락처를 포함하지 않음
-
-## 원격 확인
-
-- [ ] GitHub 저장소 이름이 `git-practice`
-- [ ] GitHub 저장소 공개 상태가 Public
-- [ ] 로컬 main 브랜치를 원격 저장소로 Push
-- [ ] GitHub에서 파일 5개와 커밋 최소 5개 확인
-- [ ] 실제 GitHub 저장소 전체 URL을 제출 주소로 확인
+제출 주소: https://github.com/chan-svg587/git-practice
